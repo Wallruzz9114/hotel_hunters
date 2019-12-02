@@ -24,30 +24,28 @@ class _SplashScreenState extends State<SplashScreen> {
   }
 
   @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: <Widget>[
-            Icon(
-              Icons.hotel,
-              size: 80.0,
-            ),
-            Padding(
-              padding: const EdgeInsets.only(top: 20.0),
-              child: Text(
-                'Welcome to ${ AppConstants.appName }',
-                style: TextStyle(
-                  fontWeight: FontWeight.bold,
-                  fontSize: 40.0,
-                ),
-                textAlign: TextAlign.center,
+  Scaffold build(BuildContext context) => Scaffold(
+    body: Center(
+      child: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: <Widget>[
+          Icon(
+            Icons.hotel,
+            size: 80.0,
+          ),
+          Padding(
+            padding: const EdgeInsets.only(top: 20.0),
+            child: Text(
+              'Welcome to ${ AppConstants.appName }',
+              style: TextStyle(
+                fontWeight: FontWeight.bold,
+                fontSize: 40.0,
               ),
-            )
-          ],
-        ),
+              textAlign: TextAlign.center,
+            ),
+          )
+        ],
       ),
-    );
-  }
+    ),
+  );
 }

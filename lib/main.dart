@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'screens/login_screen.dart';
+import 'screens/root_screen.dart';
+import 'screens/sign_up_screen.dart';
 import 'screens/slpash_screen.dart';
 
 void main() => runApp(App());
@@ -12,6 +14,8 @@ class App extends StatelessWidget {
       home: SplashScreen(),
       routes: <String, WidgetBuilder>{
         LoginScreen.routeName: (BuildContext context) => LoginScreen(),
+        SignUpScreen.routeName: (BuildContext context) => SignUpScreen(),
+        RootScreen.routeName: (BuildContext context) => RootScreen(),
       },
     );
   }
