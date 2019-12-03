@@ -58,7 +58,7 @@ class _RootScreenState extends State<RootScreen> {
         _buildNavigationItem(0, Icons.search, _screenTitles[0]),
         _buildNavigationItem(1, Icons.favorite_border, _screenTitles[1]),
         _buildNavigationItem(2, Icons.location_on, _screenTitles[2]),
-        _buildNavigationItem(3, Icons.chat_bubble_outline, _screenTitles[3]),
+        _buildNavigationItem(3, Icons.alternate_email, _screenTitles[3]),
         _buildNavigationItem(4, Icons.person_outline, _screenTitles[4]),
       ],
       onTap: (int index) {

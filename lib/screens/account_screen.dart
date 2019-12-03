@@ -2,6 +2,7 @@ import 'package:auto_size_text/auto_size_text.dart';
 import 'package:flutter/material.dart';
 import '../components/tiles/account_screen_list_tile.dart';
 import '../screens/login_screen.dart';
+import '../screens/personal_info_screen.dart';
 
 class AccountScreen extends StatefulWidget {
 
@@ -14,6 +15,10 @@ class _AccountScreenState extends State<AccountScreen> {
 
   void _logout() {
     Navigator.pushNamed(context, LoginScreen.routeName);
+  }
+
+  void _showPersonalInfoScreen() {
+    Navigator.pushNamed(context, PersonalInfoScreen.routeName);
   }
 
   @override
@@ -68,7 +73,7 @@ class _AccountScreenState extends State<AccountScreen> {
           children: <MaterialButton>[
             MaterialButton(
               height: MediaQuery.of(context).size.height / 12,
-              onPressed: () {},
+              onPressed: _showPersonalInfoScreen,
               child: AccountScreenListTile(
                 text: 'Personal Information',
                 iconData: Icons.person,
