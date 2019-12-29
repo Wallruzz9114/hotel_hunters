@@ -10,8 +10,8 @@ class SavedScreen extends StatefulWidget {
 class _SavedScreenState extends State<SavedScreen> {
 
   @override
-  Center build(BuildContext context) => Center(
-    child: const Text('Explore Page'),
+  Center build(BuildContext context) => const Center(
+    child: Text('Explore Page'),
   );
   
 

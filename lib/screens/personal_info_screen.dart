@@ -44,7 +44,7 @@ class _PersonalInfoScreenState extends State<PersonalInfoScreen> {
                     Padding(
                       padding: const EdgeInsets.only(top: 24.0),
                       child: TextFormField(
-                        decoration: InputDecoration(
+                        decoration: const InputDecoration(
                           labelText: 'First Name'
                         ),
                         style: const TextStyle(
@@ -55,7 +55,7 @@ class _PersonalInfoScreenState extends State<PersonalInfoScreen> {
                     Padding(
                       padding: const EdgeInsets.only(top: 12.0),
                       child: TextFormField(
-                        decoration: InputDecoration(
+                        decoration: const InputDecoration(
                           labelText: 'Last Name'
                         ),
                         style: const TextStyle(
@@ -66,7 +66,7 @@ class _PersonalInfoScreenState extends State<PersonalInfoScreen> {
                     Padding(
                       padding: const EdgeInsets.only(top: 12.0),
                       child: TextFormField(
-                        decoration: InputDecoration(
+                        decoration: const InputDecoration(
                           labelText: 'Email'
                         ),
                         style: const TextStyle(
@@ -77,7 +77,7 @@ class _PersonalInfoScreenState extends State<PersonalInfoScreen> {
                     Padding(
                       padding: const EdgeInsets.only(top: 12.0),
                       child: TextFormField(
-                        decoration: InputDecoration(
+                        decoration: const InputDecoration(
                           labelText: 'Password'
                         ),
                         style: const TextStyle(
@@ -88,7 +88,7 @@ class _PersonalInfoScreenState extends State<PersonalInfoScreen> {
                     Padding(
                       padding: const EdgeInsets.only(top: 12.0),
                       child: TextFormField(
-                        decoration: InputDecoration(
+                        decoration: const InputDecoration(
                           labelText: 'City'
                         ),
                         style: const TextStyle(
@@ -99,7 +99,7 @@ class _PersonalInfoScreenState extends State<PersonalInfoScreen> {
                     Padding(
                       padding: const EdgeInsets.only(top: 12.0),
                       child: TextFormField(
-                        decoration: InputDecoration(
+                        decoration: const InputDecoration(
                           labelText: 'Country'
                         ),
                         style: const TextStyle(
@@ -110,7 +110,7 @@ class _PersonalInfoScreenState extends State<PersonalInfoScreen> {
                     Padding(
                       padding: const EdgeInsets.only(top: 12.0),
                       child: TextFormField(
-                        decoration: InputDecoration(
+                        decoration: const InputDecoration(
                           labelText: 'Bio'
                         ),
                         style: const TextStyle(

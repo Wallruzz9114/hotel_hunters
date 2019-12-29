@@ -10,8 +10,8 @@ class TripsScreen extends StatefulWidget {
 class _TripsScreenState extends State<TripsScreen> {
 
   @override
-  Center build(BuildContext context) => Center(
-    child: const Text('Explore Page'),
+  Center build(BuildContext context) => const Center(
+    child: Text('Explore Page'),
   );
   
 

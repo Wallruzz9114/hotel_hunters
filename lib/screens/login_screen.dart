@@ -32,7 +32,7 @@ class _LoginScreenState extends State<LoginScreen> {
           children: <Widget>[
             Text(
               'Welcome to ${ AppConstants.appName }.',
-              style: TextStyle(
+              style: const TextStyle(
                 fontWeight: FontWeight.bold,
                 fontSize: 30.0,
               ),
@@ -43,10 +43,10 @@ class _LoginScreenState extends State<LoginScreen> {
                   Padding(
                     padding: const EdgeInsets.only(top: 24.0),
                     child: TextFormField(
-                      decoration: InputDecoration(
+                      decoration: const InputDecoration(
                         labelText: 'Username/Email'
                       ),
-                      style: TextStyle(
+                      style: const TextStyle(
                         fontSize: 16.0
                       ),
                     ),
@@ -54,10 +54,10 @@ class _LoginScreenState extends State<LoginScreen> {
                   Padding(
                     padding: const EdgeInsets.only(top: 12.0),
                     child: TextFormField(
-                      decoration: InputDecoration(
+                      decoration: const InputDecoration(
                         labelText: 'Password'
                       ),
-                      style: TextStyle(
+                      style: const TextStyle(
                         fontSize: 16.0
                       ),
                     ),

@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import '../components/tiles/account_screen_list_tile.dart';
 import '../screens/login_screen.dart';
 import '../screens/personal_info_screen.dart';
+import '../screens/profile_screen.dart';
 
 class AccountScreen extends StatefulWidget {
 
@@ -21,6 +22,10 @@ class _AccountScreenState extends State<AccountScreen> {
     Navigator.pushNamed(context, PersonalInfoScreen.routeName);
   }
 
+  void _showProfileScreen() {
+    Navigator.pushNamed(context, ProfileScreen.routeName);
+  }
+
   @override
   Padding build(BuildContext context) => Padding(
     padding: const EdgeInsets.fromLTRB(16.0, 48.0, 16.0, 0),
@@ -34,7 +39,7 @@ class _AccountScreenState extends State<AccountScreen> {
             mainAxisAlignment: MainAxisAlignment.start,
             children: <Widget>[
               MaterialButton(
-                onPressed: () {},
+                onPressed: _showProfileScreen,
                 child: CircleAvatar(
                   backgroundColor: Colors.black,
                   radius: MediaQuery.of(context).size.width / 9.5,
@@ -48,7 +53,7 @@ class _AccountScreenState extends State<AccountScreen> {
                 padding: const EdgeInsets.only(left: 4.0),
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
-                  children: <AutoSizeText>[
+                  children: const <AutoSizeText>[
                     AutoSizeText(
                       'Jose Pinto',
                       style: TextStyle(

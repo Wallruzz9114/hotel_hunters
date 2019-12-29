@@ -10,8 +10,8 @@ class ExploreScreen extends StatefulWidget {
 class _ExploreScreenState extends State<ExploreScreen> {
 
   @override
-  Center build(BuildContext context) => Center(
-    child: const Text('Explore Page'),
+  Center build(BuildContext context) => const Center(
+    child: Text('Explore Page'),
   );
   
 

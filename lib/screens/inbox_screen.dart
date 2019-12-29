@@ -10,8 +10,8 @@ class InboxScreen extends StatefulWidget {
 class _InboxScreenState extends State<InboxScreen> {
 
   @override
-  Center build(BuildContext context) => Center(
-    child: const Text('Explore Page'),
+  Center build(BuildContext context) => const Center(
+    child: Text('Explore Page'),
   );
   
 

@@ -15,7 +15,7 @@ class _SplashScreenState extends State<SplashScreen> {
   @override
   void initState() {
     Timer(
-      Duration(seconds: 1),
+      const Duration(seconds: 1),
       () {
         Navigator.pushNamed(context, LoginScreen.routeName);
       }
@@ -37,7 +37,7 @@ class _SplashScreenState extends State<SplashScreen> {
             padding: const EdgeInsets.only(top: 20.0),
             child: Text(
               'Welcome to ${ AppConstants.appName }',
-              style: TextStyle(
+              style: const TextStyle(
                 fontWeight: FontWeight.bold,
                 fontSize: 40.0,
               ),
